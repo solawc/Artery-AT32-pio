@@ -1,0 +1,47 @@
+{
+  "build": {
+    "core": "at32",
+    "cpu": "cortex-m4",
+    "extra_flags": "-DAT32F403ACGT7",
+    "f_cpu": "240000000L",
+    "hwids": [
+      [
+        "0x2E3C",
+        "0xDF11"
+      ]
+    ],
+    "mcu": "at32f403aAgx",
+    "product_line": "AT32F403ACGT7",
+    "variant": "AT32F4xx/F403A_F403A(T-U)"
+  },
+  "debug": {
+    "default_tools": [
+      "stlink"
+    ],
+    "jlink_device": "AT32F403AxGx",
+    "openocd_extra_args": [
+      "-c",
+      "reset_config none"
+    ],
+    "openocd_target": "stm32f4x",
+    "svd_path": "STM32F403xx.svd"
+  },
+  "frameworks": [
+    "cmsis"
+  ],
+  "name": "Generic_F403A",
+  "upload": {
+    "maximum_ram_size": 229376,
+    "maximum_size": 262144,
+    "protocol": "serial",
+    "protocols": [
+      "jlink",
+      "cmsis-dap",
+      "stlink",
+      "serial",
+      "blackmagic"
+    ]
+  },
+  "url": "https://www.arterychip.com/en/product/AT32F403A.jsp",
+  "vendor": "Artery"
+}
